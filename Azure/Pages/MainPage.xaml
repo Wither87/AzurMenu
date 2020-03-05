@@ -1,0 +1,58 @@
+﻿<Page x:Class="Azure.Pages.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Azure.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MainPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="50"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Row="0" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Button Grid.Row="0"/>
+            <Button Margin="5" Grid.Row="2"/>
+            <Button Margin="5" Grid.Row="3"/>
+            <Button Margin="5" Grid.Row="4"/>
+
+        </Grid>
+
+        <Button FontFamily="Comic Sans MS" FontSize="18" Content="Formation" Width="110" Height="50" Margin="20,170,120,120" Grid.Column="2"/>
+        <Button FontFamily="Comic Sans MS" FontSize="18" Content="Battle" Width="90" Height="90" Margin="145,130,15,120" Grid.Column="2"/>
+
+        <Grid Grid.Column="3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Button FontFamily="Comic Sans MS" FontSize="18" Content="Memento" Margin="5" Grid.Row="1"/>
+            <Button FontFamily="Comic Sans MS" FontSize="18" Content="Ladder" Margin="5" Grid.Row="2"/>
+            <Button FontFamily="Comic Sans MS" FontSize="18" Content="Friends" Margin="5" Grid.Row="3"/>
+            <Button FontFamily="Comic Sans MS" FontSize="18" Content="Mail" Margin="5" Grid.Row="4"/>
+            <Button FontFamily="Comic Sans MS" FontSize="18" Content="Notice" Margin="5" Grid.Row="5"/>
+            <Button FontFamily="Comic Sans MS" FontSize="18" Content="Settings" Margin="5" Grid.Row="6"/>
+        </Grid>
+    </Grid>
+</Page>
